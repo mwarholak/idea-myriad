@@ -1,3 +1,3 @@
-[submodule "idea/pigs-fishes"]
-	path = idea/pigs-fishes
-	url = git@github.com:mwarholak/pigs-fishes.git
+[submodule "idea/pigs-and-fishes"]
+	path = idea/pigs-and-fishes
+	url = git@github.com:mwarholak/pigs-and-fishes.git
