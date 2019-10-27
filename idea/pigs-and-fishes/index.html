@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change this :)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <link rel="shortcut icon" href="img/favicon.ico?v3">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed" rel="stylesheet"> -->
+  <link rel="stylesheet" href="i.css">
+  <script src="./scripts/vue.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>. -->
+  <script src="./scripts/vuex.js"></script>
+  <!-- <script src="https://unpkg.com/vuex@2.5.0"></script> -->
+  <!-- polyfill -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>-->
+  <script src="./scripts/es6-promise.auto.js"></script>
+  <script src="./scripts/vue-router.js"></script>
+  <!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
+  <!-- axios -->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script> -->
+  <script src="./scripts/axios.min.js"></script>
+</head>
+<body>
+<div id="page-wrapper" v-bind:class="[pageDisplay, displayedHex, displayZh]">
+  <header id="top">
+    <transition-group name="fade-in" mode="out-in">
+      <div id="top-wrapper" :key="'py-'+textUpdate">
+        <div id="title-zi">
+          <h2 v-cloak  class="title-fanti" :key="'ft-'+textUpdate">{{ titleFanti }}</h2>
+          <h2 v-cloak  class="title pinyin" :key="'py-'+textUpdate">{{ titlePinyin }}</h2>
+        </div>
+        <div id="title-main">
+          <h2 v-cloak  class="title-zh" :key="'zh-'+textUpdate">{{ titleZh }}</h2>
+          <h1 class="title" :key="'en-'+textUpdate">{{ title }}</h1>
+        </div>
+        <h3 v-cloak id="gua-number" :key="'num-'+textUpdate">{{ number }}</h3>
+      </div>
+    </transition-group>
+  </header>
+  <div class="flex-grid">
+    <!-- <primary-content></primary-content> -->
+
+    <div id="left" class="col">
+    <the-judgement v-if="pageDisplay !== 'hexInfo'" :text-update="textUpdate" :judgement="judgement" :judgement-zh="judgementZh" :image-zh="imageZh" :display-zh="displayZh" :image="image"></the-judgement>
+
+    <trigram-detail v-if="pageDisplay == 'hexInfo'" :trigrams="trigrams" :text-update="textUpdate">
+    </trigram-detail>
+    </div> <!-- end Left -->
+    <div id="middle" class="col">
+      <you-hexy-thing :text-update="textUpdate" :page-state="pageDisplay"></you-hexy-thing>
+      <div>
+          <transition name="fade-in" mode="out-in"><h5 id="displayed-hex" :key="'image-'+textUpdate">{{ displayedHex }}</h5></transition>
+
+          <transition-group name="slide-fade">
+            <div v-for="(hexLine,index) in reverseLines" v-bind:key="index" v-bind:class="'line line-' + (6-index) + ' line-value-' + hexLine + ' ' + displayedHex">{{ hexLine }}</div>
+          </transition-group>
+
+          <transition name="fade">
+          <div id="castButton" class="outlined light" v-if="show">
+            <button @click.once="castHex(), show = !show, showFuture = true, textUpdate++" tabindex="1">cast hexagram
+              <span class="btn-line top"></span>
+              <!-- <span class="btn-line right"></span> -->
+              <span class="btn-line bottom"></span>
+              <!-- <span class="btn-line left"></span> -->
+            </button>
+          </div>
+        </transition>
+          <div id="controls">
+            <div v-if="pageDisplay !== 'initial'" id="infoButton" key="hexInfo">
+              <a href="#" @click="showHexInfo">info</a>
+            </div>
+
+        <transition name="slide-fade" mode="out-in">
+
+          <div v-if="changingHex && showFuture" id="approachedButton" key="showFuture">
+            <button @click="loadFutureHex(), showFuture = !showFuture, textUpdate++">Approached Gua</button>
+          </div>
+
+
+        <template v-else-if="changingHex && !showFuture && pageDisplay !== 'initial'">
+          <div id="primaryButton" key="showPrimary">
+            <button @click="showPrimaryHex(), showFuture = true, textUpdate++">Primary Gua</button>
+          </div>
+        </template>
+
+        <template v-else>
+          <div id="stable-hex" key="static">the hexagram is stable</div>
+        </template>
+        </transition>
+
+          <div v-if="pageDisplay !== 'initial'" id="zhongwenButton" key="toggleZh">
+            <a @click="showChineseText">toggle chinese</a>
+          </div>
+        </div> <!-- end Controls -->
+
+      </div>
+    </div> <!-- end Middle -->
+  <!-- <secondary-content></secondary-content> -->
+  <div id="right" class="col">
+    <the-lines :lines="lines" :lines-zh="linesZh" :text-update="textUpdate" :display-zh="displayZh"></the-lines>
+  </div> <!-- end Right -->
+
+        <div v-if="pageDisplay !== 'initial'" id="toggle-menu"><a v-on:click="loadMenu()" href="#"></a></div>
+        <div v-if="pageDisplay !== 'initial' && showMenu" id="menu">
+          <div class="menu-item">
+            <a v-on:click="castHex(), show = !show, showFuture = true, textUpdate++" href="">Cast another Hexagram</a>
+          </div>
+          <div class="menu-item">
+            <select id="translation" @change="onTranslationChange()" v-model=selectedTranslation>
+              <option disabled="Translation">Select Translation</option>
+              <option value="Wilhelm">Wilhelm</option>
+              <option value="Lynn">Lynn</option>
+            </select>
+          </div>
+        </div>
+</div>
+<footer>
+</footer>
+</div>
+
+<script type="text/javascript" src=yarrow.js></script>
+</body>
+</html>

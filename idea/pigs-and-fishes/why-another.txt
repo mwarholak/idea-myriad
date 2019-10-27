@@ -1,0 +1,17 @@
+Why another i ching?
+
+THere are nearly as many i ching sites across the web sa there are have been tranclations and coommentaries over the years.
+
+And there have been some good ones. Some great ones.
+
+Some of the sites with a better user expereince references either poor translations or used incorrect algortithms to generate the hexagram.
+Considering the deterministic nature of the I Ching, it really shouldn't matter. But why choose incorrect probabilites when the right ones can be created? Given the opportuinity, I've really taken this to the extreme. My algoriuthm enitirely emulates the yarrow process. A simple function that matcehs the resultiung probability would produce the same result much more effiecnetly. Why do it then? Well, it was fun to code. Also, I wanted to pay homage to the analog version of creating a hexagram. A binary tribute to the analog process of creating a binary hexagram.
+
+in the first digital representation of the analog
+
+Mobile first design.
+
+China, art, digital. The I ching is really the first binary system created by humans. I've used the I CHING throughout my personal life, which has merged both philosphy, China, and tech.
+
+
+This project was started mainly as a way to deepen working expereince with the a spe

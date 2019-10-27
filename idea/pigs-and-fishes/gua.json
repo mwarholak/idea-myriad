@@ -1,0 +1,174 @@
+{
+  "trigrams": {
+    "trigram": [
+      {
+        "id": "111",
+        "character": "☰",
+        "name": {
+          "fanti": "乾",
+          "jianti": "乾",
+          "pinyin": "qián",
+          "wadeGiles": "Ch'ien",
+          "english": "heaven",
+          "symbol": "天"
+        },
+        "direction": {
+          "english": "northwest",
+          "jianti": "西北"
+        },
+        "concept": ["creative", "movement"],
+        "qualities": ["strong", "clever", "brave", "active", "solid", "decisive", "moving", "vital", "powerful", "untiring strength", "ruler", "takes the initiative"],
+        "family": "father",
+        "bodyPart": "head",
+        "season": "late fall, early winter"
+      },
+      {
+        "id": "110",
+        "character": "☱",
+        "name": {
+          "jianti": "兑",
+          "fanti": "兌",
+          "pinyin": "duì",
+          "wadeGiles": "tui",
+          "english": "lake",
+          "symbol": "泽"
+        },
+        "direction": {
+          "english": "west",
+          "jianti": "西"
+        },
+        "concept": ["joyful", "marsh", "complacent"],
+        "qualities": ["happy", "gossipy", "slanderous", "joy", "critical", "quarrelsome", "laughing", "smiling", "harmonious", "pleasurable", "contentment", "low lying water", "marsh", "soft", "sorceress"],
+        "family": "youngest daughter",
+        "bodyPart": "mouth, tongue",
+        "season": "fall"
+      },
+      {
+        "id": "101",
+        "character": "☲",
+        "name": {
+          "jianti": "离",
+          "fanti": "離",
+          "pinyin": "Lí",
+          "wadeGiles": "",
+          "english": "Flame",
+          "symbol": "火"
+        },
+        "direction": {
+          "english": "south",
+          "jianti": "南"
+        },
+        "concept": ["brightness", "elegance", "clinging"],
+        "qualities": ["light giving", "hot", "agitated", "fire", "brilliance", "beauty", "beautiful", "depending", "dedicated", "elegance", "enlightened", "clinging", "intelligence", "dryness"],
+        "family": "second daughter",
+        "bodyPart": "eyes",
+        "season": "summer"
+      },
+      {
+        "id": "100",
+        "character": "☳",
+        "name": {
+          "jianti": "震",
+          "fanti": "震",
+          "pinyin": " Zhèn",
+          "wadeGiles": "Chên",
+          "english": "thunder",
+          "symbol": "雷"
+        },
+        "direction": {
+          "english": "east",
+          "jianti": "東"
+        },
+        "concept": ["thunder", "exciting power"],
+        "qualities": ["thunder", "movement", "active", "moving", "arousing", "excited", "diligent", "angry", "nervous", "threatening", "anxious", "successful", "flying", "shocking", "motion", "growth", "vehemence", "forceful"],
+        "family": "eldest son",
+        "bodyPart": "feet",
+        "season": "spring"
+      },
+      {
+        "id": "011",
+        "character": "☴",
+        "name": {
+          "jianti": "巺",
+          "fanti": "巽",
+          "pinyin": "Xùn",
+          "wadeGiles": "Sun",
+          "english": "Wind",
+          "symbol": "风"
+        },
+        "direction": {
+          "english": "southeast",
+          "jianti": "東南"
+        },
+        "concept": ["penetrating", "flexibility"],
+        "qualities": ["yielding", "gentle", "indecisive", "weak", "fragrant", "neat", "obedient", "restless", "excitable", "bland", "mild", "wood", "wind", "close", "pursuit of gain", "flexible", "pliancy"],
+        "family": "eldest daugther",
+        "bodyPart": "thigh",
+        "season": "late spring, early summer"
+      },
+      {
+        "id": "010",
+        "character": "☵",
+        "name": {
+          "jianti": "坎",
+          "fanti": "坎",
+          "pinyin": " Kǎn",
+          "wadeGiles": "K'an",
+          "english": "water",
+          "symbol": "水"
+        },
+        "direction": {
+          "english": "north",
+          "jianti": "北"
+        },
+        "concept": ["peril", "difficulty", "dangerous"],
+        "qualities": ["peril", "difficulty", "moon", "enveloping", "dangerous", "cunning", "deceitful", "aimless", "clever", "wise", "sad", "harmless", "melancholy", "depressed", "rain", "disturbing", "hidden", "concealed", "anxiety", "distress of the mind", "abysmal"],
+        "family": "second son",
+        "bodyPart": "ears",
+        "season": "winter"
+      },
+      {
+        "id": "001",
+        "character": "☶",
+        "name": {
+          "jianti": "艮",
+          "fanti": "艮",
+          "pinyin": "Gèn",
+          "wadeGiles": "Kên",
+          "english": "mountain",
+          "symbol": "山"
+        },
+        "direction": {
+          "english": "northeast",
+          "jianti": "東北"
+        },
+        "concept": ["arresting", "immovable", "mountain"],
+        "qualities": ["quiet", "slow", "indecisive", "tough", "secretive", "contradictory", "independent", "hard", "mountain", "obstinate", "perverse", "stubborn", "immovable", "standstill", "resting", "stopping"],
+        "family": "youngest son",
+        "bodyPart": "hand",
+        "season": "late winter, early spring"
+      },
+      {
+        "id": "000",
+        "character": "☷",
+        "name": {
+          "jianti": "坤",
+          "fanti": "坤",
+          "pinyin": "Kūn",
+          "wadeGiles": "kun",
+          "english": "earth",
+          "symbol": "地"
+        },
+        "direction": {
+          "english": "southwest",
+          "jianti": "西南"
+        },
+        "concept": ["docility", "submissive", "earth"],
+        "qualities": ["passive", "earth", "female", "receptive", "weak", "responsive", "yielding", "devoted", "flexible", "soft", "calm", "wife", "patient", "moderate", "empty", "cowardly", "maternal", "docile", "capaciousness", "submissiveness", "subordination", "compliant", "caldron", "obscure", "sustaining power"],
+        "family": "mother",
+        "bodyPart": "stomach",
+        "season": "late summer, early autumn"
+      }
+    ]
+  }
+}
