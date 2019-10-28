@@ -368,6 +368,7 @@ two U+3000 [ideographic space] for text-indent
     *
     */
     border-left: #e0e0e0 2px solid;
+    border-right: 0;
     margin-left: -8px;
     padding-left: 8px;
     -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e0e0e0), to(rgba(0, 0, 0, 0))) 1 100%;
