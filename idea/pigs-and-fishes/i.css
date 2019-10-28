@@ -30,6 +30,10 @@ h1, h2, h3, h4 {
   font-family: 'Roboto Condensed', HanaMinA, HanaMinB, 'Microsoft YaHei', 微软雅黑, STXihei, 华文细黑, sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 body, p {
   font-family: 'Lato', sans-serif;
    background: #fff8f0;
@@ -46,6 +50,7 @@ a:visited {
 }
 #page-wrapper {
   transition: background 1s linear;
+  padding: 0.5em;
 }
 #page-wrapper.initial {
   height: 100vh;
