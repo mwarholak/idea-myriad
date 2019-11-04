@@ -1645,7 +1645,7 @@ span.parenthetical.annotation {
   padding-right: 0.5em;
 }
 .body-part li.selected:after {
-  content: "\25c0 \ "; /* charactèr ISO 10646 */
+  content: "\25C0 \FE0E "; /* charactèr ISO 10646 */
     vertical-align: middle;
     margin-left: .5em;
     font-size: 0.4em;
