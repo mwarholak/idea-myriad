@@ -1638,7 +1638,7 @@ span.parenthetical.annotation {
   font-style: normal;
 }
 .family li.selected:before {
-  content: "\25B6 \ "; /* charactèr ISO 10646 */
+  content: "\25B6 \FE0E "; /* charactèr ISO 10646 */
   vertical-align: middle;
   margin-left: -1.5em;
   font-size: 0.4em;
